@@ -1,0 +1,131 @@
+/* responsive */
+@media screen and (max-width: 1003px) {
+    .content-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .hero {
+        background-image: url(/dist/images/heros/hero-image2-large.jpg);
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 840px) {
+    .content-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+
+@media screen and (max-width: 768px) {
+    .header__menu {
+        display: block;
+    }
+
+    .header__title {
+        font-size: 1.5rem;
+    }
+
+    .sub__title h2 {
+        font-size: 1.5rem;
+    }
+    .nav {
+        position: absolute;
+        width: 300px;
+        -webkit-transform: translate(-340px, 0);
+        transform: translate(-340px, 0);
+        transition: transform 0.3s ease;
+        text-align: center;
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        top: 72px;
+    }
+    .nav.open {
+        -webkit-transform: translate(-35px, 0);
+        transform: translate(-35px, 0);
+    }
+    .nav__list {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0;
+        align-content: space-around;
+        row-gap: 1rem;
+    }
+
+    .content__item {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .content-list {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero {
+        background-image: url(/dist/images/heros/hero-image2-small.jpg);
+        min-height: 500px;
+        background-position: center;
+    }
+}
+
+@media screen and (max-width: 500px) {
+
+    .content-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0;
+        padding: 0;
+    }
+
+    .content__item {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* .content__item {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footer__profil {
+        column-gap: 0.1rem;
+        padding: 1px;
+    }
+    
+    .fab {
+        font-size: 1.5rem;
+    } */
+    
+}
+
+@media screen and (max-width:300px) {
+
+    .header__title a{
+        font-size: 16px;
+    }
+
+    .content-list {
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 0;
+        margin: 0;
+    }
+
+    .content__item {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    /* .header__title {
+        font-size: 1.2rem;
+    }
+
+    .footer__inner p {
+        font-size: 0.8rem;
+    }
+
+    .fab {
+        font-size: 1.1rem;
+    } */
+}
+    
